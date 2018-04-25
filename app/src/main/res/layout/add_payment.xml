@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="PAYMENT"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/payment_slide"
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            app:tabMode="fixed" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_holder"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Total:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/paid_holder"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Paid:"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/change_pla_holder"
+            android:layout_width="match_parent"
+            android:layout_weight="0.6"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Change:"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/change_holder"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Ksh."
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/cash_entry"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/image_holder"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/payment_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:background="#e9e1e1"
+            android:text="Pay"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="0.90" />
+    </LinearLayout>
+
+
+</LinearLayout>

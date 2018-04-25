@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_breakfast"
+            android:icon="@drawable/ic_coffee_cup"
+            android:title="BreakFast" />
+        <item
+            android:id="@+id/nav_lunch"
+            android:icon="@drawable/ic_lunch"
+            android:title="Lunch" />
+        <item
+            android:id="@+id/nav_supper"
+            android:icon="@drawable/ic_chicken"
+            android:title="Supper" />
+        <item
+            android:id="@+id/nav_drinks"
+            android:icon="@drawable/ic_glass_and_bottle_of_wine"
+            android:title="Drinks" />
+    </group>
+
+    <item android:title="Management">
+        <menu>
+            <item
+                android:id="@+id/nav_update_menu"
+                android:icon="@drawable/ic_updatedp"
+                android:title="Update Menu" />
+            <item
+                android:id="@+id/nav_purchases"
+                android:icon="@drawable/ic_purchase_receipt"
+                android:title="Daily Purchases" />
+            <item
+                android:id="@+id/nav_expenses"
+                android:icon="@drawable/ic_receipt"
+                android:title="Expenses" />
+            <item
+                android:id="@+id/nav_reports"
+                android:icon="@drawable/ic_report"
+                android:title="Reports" />
+        </menu>
+    </item>
+
+</menu>
